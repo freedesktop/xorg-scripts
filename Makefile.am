@@ -23,8 +23,8 @@ dist_bin_SCRITPS = fontname.sh fontprop.sh xon.sh
 
 bin_SCRIPTS = xauth_switch_to_sun-des-1
 
-xauth_switch_to_sun-des-1: xauth_switch_to_sun-des-1.cpp
-	grep -v Avoid $< | sed -e /^\#.*$$/d -e s/XCOMM/\#/g > $@
+xauth_switch_to_sun-des-1: $(srcdir)/xauth_switch_to_sun-des-1.cpp
+	grep -v Avoid $(srcdir)/xauth_switch_to_sun-des-1.cpp | sed -e /^\#.*$$/d -e s/XCOMM/\#/g > $@
 
 CLEANFILES = xauth_switch_to_sun-des-1
 
