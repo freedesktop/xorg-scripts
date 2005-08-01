@@ -30,6 +30,6 @@ CLEANFILES = xauth_switch_to_sun-des-1
 
 EXTRA_DIST = xauth_switch_to_sun-des-1.cpp
 
-dist_man_MANS = \
+dist_man1_MANS = \
         xon.man
 
