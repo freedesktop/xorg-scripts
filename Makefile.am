@@ -19,7 +19,7 @@
 #  TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 #  PERFORMANCE OF THIS SOFTWARE.
 
-dist_bin_SCRIPTS = fontname.sh fontprop.sh xon.sh
+dist_bin_SCRIPTS = fontname.sh fontprop.sh xon
 
 bin_SCRIPTS = xauth_switch_to_sun-des-1
 
