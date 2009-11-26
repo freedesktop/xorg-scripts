@@ -26,6 +26,7 @@ bin_SCRIPTS = xauth_switch_to_sun-des-1
 xauth_switch_to_sun-des-1: $(srcdir)/xauth_switch_to_sun-des-1.cpp
 	grep -v Avoid $(srcdir)/xauth_switch_to_sun-des-1.cpp | sed -e /^\#.*$$/d -e s/XCOMM/\#/g > $@
 
+MAINTAINERCLEANFILES = ChangeLog INSTALL
 CLEANFILES = xauth_switch_to_sun-des-1
 
 EXTRA_DIST = xauth_switch_to_sun-des-1.cpp
