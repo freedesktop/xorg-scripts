@@ -20,17 +20,13 @@
 #  PERFORMANCE OF THIS SOFTWARE.
 
 SUBDIRS = man
-dist_bin_SCRIPTS = fontname.sh fontprop.sh xon
-
-bin_SCRIPTS = xauth_switch_to_sun-des-1
-
-xauth_switch_to_sun-des-1: $(srcdir)/xauth_switch_to_sun-des-1.cpp
-	grep -v Avoid $(srcdir)/xauth_switch_to_sun-des-1.cpp | sed -e /^\#.*$$/d -e s/XCOMM/\#/g > $@
+dist_bin_SCRIPTS = 	\
+	fontname.sh 	\
+	fontprop.sh 	\
+	xon 		\
+	xauth_switch_to_sun-des-1
 
 MAINTAINERCLEANFILES = ChangeLog INSTALL
-CLEANFILES = xauth_switch_to_sun-des-1
-
-EXTRA_DIST = xauth_switch_to_sun-des-1.cpp
 
 .PHONY: ChangeLog INSTALL
 
